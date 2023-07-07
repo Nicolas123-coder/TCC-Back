@@ -1,13 +1,13 @@
 import { Router } from "express";
-import { createRemedio, getRemedio, getRemedios, baixaRemedio } from "./controllers/remedioController.js";
+import { createRemedio, getRemedio, getRemedios, baixaRemedio, verifyExpiredMedicine } from "./controllers/remedioController.js";
 import { body, validationResult } from "express-validator";
 import { isLoggedIn } from "./middlewares/authMiddleware.js";
 
 const router = Router();
 
 export default router
-  .get("/test", isLoggedIn, (req, res) => {
-    res.status(200).send("API Working ✅");
+  .get("/health", isLoggedIn, (req, res) => {
+    res.status(200).send("API Up ✅");
   })
 
   .get("/getRemedios", isLoggedIn, getRemedios)
@@ -25,18 +25,14 @@ export default router
   .post(
     "/createRemedio",
     isLoggedIn, 
-
-    body("nome").isString().withMessage("O nome é obrigatório"),
-    body("dataVencimento")
+    body("name").isString().withMessage("O nome é obrigatório"),
+    body("expireDate")
       .isString()
       .withMessage("A data de vencimento é obrigatória"),
     body("status").isString().withMessage("O status é obrigatório"),
     body("lab").isString().withMessage("O laboratório é obrigatório"),
-    body("estoque").isString().withMessage("O estoque é obrigatório"),
-    body("dataInclusao")
-      .isString()
-      .withMessage("A data de inclusão é obrigatória"),
-    body("receita").isBoolean().withMessage("A receita é obrigatória"),
+    body("stock").isString().withMessage("O estoque é obrigatório"),
+    body("prescription").isBoolean().withMessage("A receita é obrigatória"),
 
     (req, res) => {
       const errors = validationResult(req);
@@ -53,6 +49,7 @@ export default router
     "/baixaRemedio",
     isLoggedIn, 
 
+    //TODO: ARRUMAR NPARAMETROS
     body("status").isString().withMessage("O status é obrigatório"),
     body("paciente").isString().withMessage("O paciente é obrigatório"),
 
@@ -66,3 +63,7 @@ export default router
       baixaRemedio(req, res);
     }
   )
+
+  .get("/getExpiredMedicines", isLoggedIn, (req, res) => {
+    verifyExpiredMedicine(res)
+  })

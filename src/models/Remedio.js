@@ -2,14 +2,13 @@ import { model, Schema } from "mongoose";
 
 const remedioSchema = new Schema(
   {
-    nome: String,
-    dataVencimento: String,
+    name: String,
+    expireDate: Date,
     status: String,
     lab: String,
-    estoque: String,
-    dataInclusao: String,
-    receita: Boolean,
-    paciente: String
+    stock: String,
+    prescription: Boolean,
+    patient: String
   },
   {
     timestamps: true,

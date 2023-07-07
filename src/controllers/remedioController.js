@@ -46,5 +46,48 @@ export async function baixaRemedio(req, res) {
   }
 }
 
-//
+export async function verifyExpiredMedicine(res) {
+  try {
+    const currentDate = new Date();
+    const minExpirationDate = new Date();
+    minExpirationDate.setDate(currentDate.getDate() + 5); // Adiciona 5 dias à data atual
+
+    let expiredMedicines = []
+    let almostExpiredMedicines = []
+
+    //Expired medication
+    await RemedioModel.find({
+      expireDate: { $lte: currentDate }
+    })
+    .then(items => {  
+      expiredMedicines = items
+  
+      console.log('Itens que já venceram:', expiredMedicines);
+    })
+    .catch(error => {
+      console.error('Erro na consulta:', error);
+    });
+
+    //Almost expired medication
+    await RemedioModel.find({
+      expireDate: { $gt: currentDate, $lte: minExpirationDate }
+    })
+    .then(items => {  
+      almostExpiredMedicines = items
+  
+      console.log('Itens que estão perto do vencimento:', almostExpiredMedicines);
+    })
+    .catch(error => {
+      console.error('Erro na consulta:', error);
+    });
+
+    return res.status(200).json({
+      expiredMedicines: expiredMedicines,
+      almostExpiredMedicines: almostExpiredMedicines
+    });
+  } catch (error) {
+    console.log(error.message)
+    return res.status(400).json({error: error.message}) 
+  }
+}
 // fazer isso na api ou em um lambda separado
