@@ -48,9 +48,10 @@ export async function baixaRemedio(req, res) {
 
 export async function verifyExpiredMedicine(res) {
   try {
+    //Datas de referencia
     const currentDate = new Date();
     const minExpirationDate = new Date();
-    minExpirationDate.setDate(currentDate.getDate() + 5); // Adiciona 5 dias à data atual
+    minExpirationDate.setDate(currentDate.getDate() + 5); 
 
     let expiredMedicines = []
     let almostExpiredMedicines = []
@@ -90,4 +91,3 @@ export async function verifyExpiredMedicine(res) {
     return res.status(400).json({error: error.message}) 
   }
 }
-// fazer isso na api ou em um lambda separado
