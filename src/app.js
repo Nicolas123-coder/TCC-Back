@@ -4,11 +4,13 @@ import db from "../config/db.js";
 import Logger from "../config/logger.js";
 import morgan from "morgan";
 import expressListEndpoints from 'express-list-endpoints';
-import UserRouter from "./controllers/userController.js"
+import UserRouter from "./controllers/userController.js";
+import cors from "cors";
 
 const app = express();
 const port = 3001;
 
+app.use(cors());
 app.use(morgan("tiny"));
 app.use(express.json());
 app.use("/", routes);
