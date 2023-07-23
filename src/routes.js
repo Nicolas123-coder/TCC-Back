@@ -1,5 +1,11 @@
 import { Router } from "express";
-import { createRemedio, getRemedio, getRemedios, baixaRemedio, verifyExpiredMedicine } from "./controllers/remedioController.js";
+import {
+  createRemedio,
+  getRemedio,
+  getRemedios,
+  baixaRemedio,
+  verifyExpiredMedicine,
+} from "./controllers/remedioController.js";
 import { body, validationResult } from "express-validator";
 import { isLoggedIn } from "./middlewares/authMiddleware.js";
 
@@ -10,10 +16,12 @@ export default router
     res.status(200).send("API Up ✅");
   })
 
-  .get("/getRemedios", isLoggedIn, getRemedios)
+  .get("/getRemedios", isLoggedIn, (req, res) => {
+    getRemedios(res);
+  })
 
   .get("/getRemedio/:id", isLoggedIn, (req, res) => {
-    const id = req.params.id
+    const id = req.params.id;
 
     if (!id) {
       return res.status(400).json({ errors: "Missing ID param !!" });
@@ -24,7 +32,7 @@ export default router
 
   .post(
     "/createRemedio",
-    isLoggedIn, 
+    isLoggedIn,
     body("name").isString().withMessage("O nome é obrigatório"),
     body("expireDate")
       .isString()
@@ -47,7 +55,7 @@ export default router
 
   .post(
     "/baixaRemedio",
-    isLoggedIn, 
+    isLoggedIn,
 
     //TODO: ARRUMAR NPARAMETROS
     body("status").isString().withMessage("O status é obrigatório"),
@@ -65,5 +73,5 @@ export default router
   )
 
   .get("/getExpiredMedicines", isLoggedIn, (req, res) => {
-    verifyExpiredMedicine(res)
-  })
+    verifyExpiredMedicine(res);
+  });
