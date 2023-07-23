@@ -19,7 +19,7 @@ app.use("/user", UserRouter)
 app.listen(port, async () => {
   await db();
 
-  Logger.info("App rodando na porta 3000 🔥");
+  Logger.info("App rodando na porta 3001 🔥");
 });
 
 const routesPrint = expressListEndpoints(app);

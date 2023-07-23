@@ -1,5 +1,5 @@
 import { Router } from "express";
-import {User} from "../models/User.js";
+import { User } from "../models/User.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
@@ -12,6 +12,7 @@ const { SECRET = "secret" } = process.env;
 
 router.post("/signup", async (req, res) => {
   try {
+    // TODO: não deixar cadastrar dois users repetidos
     req.body.password = await bcrypt.hash(req.body.password, 10);
     const user = await User.create(req.body);
 
@@ -42,4 +43,4 @@ router.post("/login", async (req, res) => {
   }
 });
 
-export default router
+export default router;
