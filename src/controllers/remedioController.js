@@ -31,6 +31,7 @@ export async function getRemedio(id, res) {
   }
 }
 
+//TODO: melhorar essa função
 export async function baixaRemedio(req, res) {
   try {
     const query = { _id: req.body.id };

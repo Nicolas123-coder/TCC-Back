@@ -6,6 +6,7 @@ import {
   baixaRemedio,
   verifyExpiredMedicine,
 } from "./controllers/remedioController.js";
+import { login, signup } from "./controllers/userController.js";
 import { body, validationResult } from "express-validator";
 import { isLoggedIn } from "./middlewares/authMiddleware.js";
 
@@ -74,4 +75,12 @@ export default router
 
   .get("/getExpiredMedicines", isLoggedIn, (req, res) => {
     verifyExpiredMedicine(res);
+  })
+
+  .post("/signup", (req, res) => {
+    signup(req, res);
+  })
+
+  .post("/login", (req, res) => {
+    login(req, res);
   });

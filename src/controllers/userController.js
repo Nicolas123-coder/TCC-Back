@@ -1,5 +1,3 @@
-//TODO: separar as funções desse arquivo no controller e as rotas no route.js
-import { Router } from "express";
 import { User } from "../models/User.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
@@ -7,11 +5,9 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const router = Router();
-
 const { SECRET = "secret" } = process.env;
 
-router.post("/signup", async (req, res) => {
+export async function signup(req, res) {
   try {
     const existingUser = await User.findOne({ username: req.body.username });
 
@@ -26,9 +22,9 @@ router.post("/signup", async (req, res) => {
   } catch (error) {
     return res.status(400).json({ error });
   }
-});
+}
 
-router.post("/login", async (req, res) => {
+export async function login(req, res) {
   try {
     const user = await User.findOne({ username: req.body.username });
 
@@ -47,6 +43,4 @@ router.post("/login", async (req, res) => {
   } catch (error) {
     return res.status(400).json({ error });
   }
-});
-
-export default router;
+}
