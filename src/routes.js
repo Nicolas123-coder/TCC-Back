@@ -13,7 +13,7 @@ import { isLoggedIn } from "./middlewares/authMiddleware.js";
 const router = Router();
 
 export default router
-  .get("/health", isLoggedIn, (req, res) => {
+  .get("/health", (req, res) => {
     res.status(200).send("API Up ✅");
   })
 
