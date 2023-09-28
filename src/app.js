@@ -7,7 +7,7 @@ import expressListEndpoints from "express-list-endpoints";
 import cors from "cors";
 
 const app = express();
-const port = 3001;
+const port = 3002;
 
 app.use(cors());
 app.use(morgan("tiny"));
@@ -17,7 +17,7 @@ app.use("/", routes);
 app.listen(port, async () => {
   await db();
 
-  Logger.info("App rodando na porta 3001 🔥");
+  Logger.info("App rodando na porta 3002 🔥");
 });
 
 const routesPrint = expressListEndpoints(app);

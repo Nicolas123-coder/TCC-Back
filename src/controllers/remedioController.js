@@ -21,9 +21,9 @@ export async function getRemedios(res) {
   }
 }
 
-export async function getRemedio(id, res) {
+export async function getRemedio(nfcId, res) {
   try {
-    const remedio = await RemedioModel.findById(id);
+    const remedio = await RemedioModel.findOne({ nfcId });
 
     return res.status(200).json(remedio);
   } catch (error) {
@@ -31,17 +31,32 @@ export async function getRemedio(id, res) {
   }
 }
 
-//TODO: melhorar essa função
 export async function baixaRemedio(req, res) {
   try {
-    const query = { _id: req.body.id };
+    const query = { nfcId: req.body.nfcId };
+    const remedio = await RemedioModel.findOne({ nfcId });
 
-    const newRemedio = await RemedioModel.updateOne(query, {
-      status: "USED",
-      paciente: req.body.paciente,
-    });
+    console.log(remedio);
 
-    return res.status(200).json(newRemedio);
+    quantidade = remedio.quantity - 1;
+
+    if (quantidade === 0) {
+      const newRemedio = await RemedioModel.updateOne(query, {
+        status: "OUT_OF_STOCK",
+        paciente: req.body.paciente,
+        quantity: quantidade,
+      });
+
+      return res.status(200).json(newRemedio);
+    } else {
+      const newRemedio = await RemedioModel.updateOne(query, {
+        status: "IN_STOCK",
+        paciente: req.body.paciente,
+        quantity: quantidade,
+      });
+
+      return res.status(200).json(newRemedio);
+    }
   } catch (error) {
     return res.status(400).json();
   }

@@ -25,7 +25,7 @@ export default router
     const id = req.params.id;
 
     if (!id) {
-      return res.status(400).json({ errors: "Missing ID param !!" });
+      return res.status(400).json({ errors: "Missing NFC ID param !!" });
     }
 
     getRemedio(id, res);
@@ -35,10 +35,11 @@ export default router
     "/createRemedio",
     isLoggedIn,
     body("name").isString().withMessage("O nome é obrigatório"),
+    body("nfcId").isString().withMessage("O id NFC é obrigatório"),
     body("expireDate")
       .isString()
       .withMessage("A data de vencimento é obrigatória"),
-    body("status").isString().withMessage("O status é obrigatório"),
+    //body("status").isString().withMessage("O status é obrigatório"),
     body("lab").isString().withMessage("O laboratório é obrigatório"),
     body("stock").isString().withMessage("O estoque é obrigatório"),
     body("prescription").isBoolean().withMessage("A receita é obrigatória"),
@@ -58,9 +59,7 @@ export default router
     "/baixaRemedio",
     isLoggedIn,
 
-    //TODO: ARRUMAR NPARAMETROS
-    body("status").isString().withMessage("O status é obrigatório"),
-    body("paciente").isString().withMessage("O paciente é obrigatório"),
+    body("nfcId").isString().withMessage("O ID NFC é obrigatório"),
 
     (req, res) => {
       const errors = validationResult(req);
