@@ -33,32 +33,33 @@ export async function getRemedio(nfcId, res) {
 
 export async function baixaRemedio(req, res) {
   try {
-    const query = { nfcId: req.body.nfcId };
-    const remedio = await RemedioModel.findOne({ nfcId });
+    const nfcId = req.body.nfcId;
 
-    console.log(remedio);
+    const query = { nfcId: nfcId };
+    const remedio = await RemedioModel.find(query);
 
-    quantidade = remedio.quantity - 1;
+    console.log("remedio", remedio[0]);
+
+    let quantidade = remedio[0].quantity;
 
     if (quantidade === 0) {
       const newRemedio = await RemedioModel.updateOne(query, {
-        status: "OUT_OF_STOCK",
-        paciente: req.body.paciente,
-        quantity: quantidade,
+        $set: { status: "OUT_OF_STOCK" }
       });
 
       return res.status(200).json(newRemedio);
     } else {
       const newRemedio = await RemedioModel.updateOne(query, {
-        status: "IN_STOCK",
-        paciente: req.body.paciente,
-        quantity: quantidade,
+        $set: { status: "IN_STOCK" },
+        $push: { patients: "Nicolas test 2" },
+        $inc: { quantity: -1 }
       });
 
       return res.status(200).json(newRemedio);
     }
   } catch (error) {
-    return res.status(400).json();
+    console.log(error.message);
+    return res.status(400).json({ error: error.message });
   }
 }
 

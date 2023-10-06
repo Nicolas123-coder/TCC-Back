@@ -1,12 +1,21 @@
 import serial
 import time
+import requests
 
-# Define the serial port and baud rate (make sure it matches your Arduino's configuration)
-serial_port = '/dev/cu.usbmodem1201'  # Change this to your Arduino's serial port
-baud_rate = 115200  # Change this to match your Arduino's baud rate
+serial_port = '/dev/cu.usbmodem1201'  # Arduino's serial port
+baud_rate = 115200  # Arduino's baud rate
+URL = 'http://localhost:3002/baixaRemedio'
+JWT_TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyMyIsImlhdCI6MTY5NjU1MTcyNn0.PBfQYeZB8_1ZCcBJpApx2lppkJ8CCtDboT1Sb2kF3xc'
+headers = {'Authorization': f"Bearer {JWT_TOKEN}"}
+
+def is_numero(string):
+    try:
+        float(string)
+        return True
+    except ValueError:
+        return False
 
 try:
-    # Open the serial port
     ser = serial.Serial(serial_port, baud_rate, timeout=1)
     print(f"Listening to {serial_port} at {baud_rate} baud...")
 
@@ -20,14 +29,20 @@ while True:
       time.sleep(2)
       # Read a line of data from the serial port
       line = ser.readline()
-      # print(line)
 
       if line:
         decoded_line = line.decode()
         print(decoded_line)
         if isinstance(decoded_line, str):
-            # uid = line[len("UID Value: "):]
             print(f"Received NFC Tag ID: {decoded_line}")  
+            print(type(decoded_line))
+
+            if(is_numero(decoded_line)):
+              payload = {
+                "nfcId": decoded_line.strip(),
+              }
+
+              requests.post(URL, json=payload, headers=headers)
     except KeyboardInterrupt as e:
       print(e)
       break

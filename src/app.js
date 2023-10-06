@@ -22,7 +22,6 @@ app.listen(port, async () => {
 
 const routesPrint = expressListEndpoints(app);
 
-//routes print
 console.log("---------------------------------------");
 console.log("Routes:");
 routesPrint.forEach((route) => {

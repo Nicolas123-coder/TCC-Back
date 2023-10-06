@@ -9,7 +9,7 @@ const remedioSchema = new Schema(
     lab: String,
     stock: String,
     prescription: Boolean,
-    patient: String,
+    patients: Array,
     quantity: Number,
   },
   {
