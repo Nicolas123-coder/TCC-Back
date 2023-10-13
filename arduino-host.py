@@ -27,6 +27,7 @@ while True:
     print("dentro do while")
     try:
       time.sleep(2)
+
       # Read a line of data from the serial port
       line = ser.readline()
 

@@ -31,7 +31,6 @@ export async function login(req, res) {
     if (user) {
       const result = await bcrypt.compare(req.body.password, user.password);
       if (result) {
-        // TODO: definir expiração do token
         const token = await jwt.sign({ username: user.username }, SECRET);
         return res.json({ token });
       } else {

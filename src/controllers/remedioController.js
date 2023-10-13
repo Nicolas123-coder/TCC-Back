@@ -38,21 +38,18 @@ export async function baixaRemedio(req, res) {
     const query = { nfcId: nfcId };
     const remedio = await RemedioModel.find(query);
 
-    console.log("remedio", remedio[0]);
-
     let quantidade = remedio[0].quantity;
-
     if (quantidade === 0) {
       const newRemedio = await RemedioModel.updateOne(query, {
-        $set: { status: "OUT_OF_STOCK" }
+        $set: { status: "OUT_OF_STOCK" },
       });
 
       return res.status(200).json(newRemedio);
     } else {
       const newRemedio = await RemedioModel.updateOne(query, {
         $set: { status: "IN_STOCK" },
-        $push: { patients: "Nicolas test 2" },
-        $inc: { quantity: -1 }
+        $push: { patients: "NICOLAS TESTE 3" },
+        $inc: { quantity: -1 },
       });
 
       return res.status(200).json(newRemedio);
@@ -85,6 +82,15 @@ export async function verifyExpiredMedicine(res) {
       .catch((error) => {
         console.error("Erro na consulta:", error);
       });
+
+    //Update the expired medicines status
+    expiredMedicines.map(async (item) => {
+      const query = { nfcId: item.nfcId };
+
+      await RemedioModel.updateOne(query, {
+        $set: { status: "EXPIRED" },
+      });
+    });
 
     //Almost expired medication
     await RemedioModel.find({
