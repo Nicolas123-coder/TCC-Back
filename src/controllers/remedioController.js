@@ -37,6 +37,7 @@ export async function baixaRemedio(req, res) {
 
     const query = { nfcId: nfcId };
     const remedio = await RemedioModel.find(query);
+    console.log(remedio);
 
     let quantidade = remedio[0].quantity;
     if (quantidade === 0) {

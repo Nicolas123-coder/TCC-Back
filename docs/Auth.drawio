@@ -1,156 +1,168 @@
-<mxfile host="65bd71144e">
-    <diagram name="Page-1" id="P8LCigwueWlHuuaHy9ja">
-        <mxGraphModel dx="691" dy="603" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-            <root>
-                <mxCell id="0"/>
-                <mxCell id="1" parent="0"/>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="gmmMnPffJitp2xm2gEH7-2" target="gmmMnPffJitp2xm2gEH7-6" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-2" value="{&lt;br&gt;&amp;nbsp; username: &quot;user&quot;,&lt;br&gt;password: &quot;123&quot;&lt;br&gt;}" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="180" y="161.73" width="140" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-3" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Sign Up&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fillColor=none;strokeColor=default;" parent="1" vertex="1">
-                    <mxGeometry y="170" width="110" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-5" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png;" parent="1" vertex="1">
-                    <mxGeometry x="170" y="92.61" width="20" height="17.39" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.02;entryY=0.489;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="gmmMnPffJitp2xm2gEH7-6" target="gmmMnPffJitp2xm2gEH7-14" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-6" value="&lt;div style=&quot;color: rgb(248, 248, 242); background-color: rgb(40, 42, 54); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;bcrypt.hash(&lt;span style=&quot;color: #ffb86c;font-style: italic;&quot;&gt;req&lt;/span&gt;.body.password, &lt;span style=&quot;color: #bd93f9;&quot;&gt;10&lt;/span&gt;)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="500" y="161.73" width="240" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-7" value="" style="endArrow=none;html=1;rounded=0;dashed=1;dashPattern=8 8;" parent="1" edge="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="410" y="323" as="sourcePoint"/>
-                        <mxPoint x="410" y="63" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-8" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;API&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="750" y="81.31" width="60" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-9" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Front-End&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="180" y="80" width="130" height="70" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-11" value="/user/signup" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="320" y="170" width="90" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-12" value="&lt;span style=&quot;color: rgb(240, 240, 240); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(42, 37, 47); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;b&gt;userController.js&lt;/b&gt;&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-                    <mxGeometry x="580" y="241.73" width="120" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-13" value="Senha é hasheada com uma criptografia&lt;br&gt;irreversível usando a biblioteca&amp;nbsp;&lt;br&gt;&lt;i&gt;bycryptjs&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="500" y="263" width="240" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-14" value="&lt;div style=&quot;color: rgb(248, 248, 242); background-color: rgb(40, 42, 54); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;await &lt;span style=&quot;color: #8be9fd;&quot;&gt;User&lt;/span&gt;.&lt;span style=&quot;color: #50fa7b;&quot;&gt;create&lt;/span&gt;(&lt;span style=&quot;color: #ffb86c;font-style: italic;&quot;&gt;req&lt;/span&gt;.body);&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="820" y="161.73" width="240" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-15" value="&lt;span style=&quot;color: rgb(240, 240, 240); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(42, 37, 47); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;b&gt;userController.js&lt;/b&gt;&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-                    <mxGeometry x="900" y="241.73" width="120" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-16" value="Usuário é criado no banco&lt;br&gt;de dados usando o seu Model, com&lt;br&gt;a senha já hasheada&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="850" y="263" width="210" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="gmmMnPffJitp2xm2gEH7-19" target="gmmMnPffJitp2xm2gEH7-23" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-19" value="{&lt;br&gt;&amp;nbsp; username: &quot;user&quot;,&lt;br&gt;password: &quot;123&quot;&lt;br&gt;}" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="180" y="498.73" width="140" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-20" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Login&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fillColor=none;strokeColor=default;" parent="1" vertex="1">
-                    <mxGeometry y="640" width="80" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-21" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png;" parent="1" vertex="1">
-                    <mxGeometry x="170" y="429.61" width="20" height="17.39" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.02;entryY=0.489;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="gmmMnPffJitp2xm2gEH7-23" target="gmmMnPffJitp2xm2gEH7-30" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-23" value="&lt;div style=&quot;color: rgb(248, 248, 242); background-color: rgb(40, 42, 54); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;User.&lt;span style=&quot;color: #50fa7b;&quot;&gt;findOne&lt;/span&gt;({ username&lt;span style=&quot;color: #ff79c6;&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;color: #ffb86c;font-style: italic;&quot;&gt;req&lt;/span&gt;.body.username });&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="500" y="498.73" width="240" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-24" value="" style="endArrow=none;html=1;rounded=0;dashed=1;dashPattern=8 8;" parent="1" edge="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="410" y="1030" as="sourcePoint"/>
-                        <mxPoint x="410" y="400" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-25" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;API&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="750" y="418.31" width="60" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-26" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Front-End&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="180" y="417" width="130" height="70" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-27" value="/user/login" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="325" y="507" width="80" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-28" value="&lt;span style=&quot;color: rgb(240, 240, 240); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(42, 37, 47); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;b&gt;userController.js&lt;/b&gt;&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-                    <mxGeometry x="570" y="578.73" width="120" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-29" value="Uma busca no banco é feita pelo &lt;br&gt;nome do usuário" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="530" y="610" width="200" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="gmmMnPffJitp2xm2gEH7-30" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="1120" y="538.7299999999998" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-30" value="&lt;div style=&quot;color: rgb(248, 248, 242); background-color: rgb(40, 42, 54); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;bcrypt.compare(&lt;span style=&quot;color: #ffb86c;font-style: italic;&quot;&gt;req&lt;/span&gt;.body.password, &lt;span style=&quot;color: #bd93f9;&quot;&gt;user&lt;/span&gt;.password);&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="820" y="498.73" width="240" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-31" value="&lt;span style=&quot;color: rgb(240, 240, 240); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(42, 37, 47); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;b&gt;userController.js&lt;/b&gt;&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-                    <mxGeometry x="895" y="578.73" width="120" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-32" value="É feita uma comparação entre &lt;br&gt;a senha do usuário&lt;br&gt;do banco de dados e a&amp;nbsp;&lt;br&gt;da requisição" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="860" y="610" width="180" height="70" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="gmmMnPffJitp2xm2gEH7-33" target="gmmMnPffJitp2xm2gEH7-36" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-33" value="&lt;div style=&quot;color: rgb(248, 248, 242); background-color: rgb(40, 42, 54); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;jwt.sign({ username&lt;span style=&quot;color: #ff79c6;&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;color: #bd93f9;&quot;&gt;user&lt;/span&gt;.username }, &lt;span style=&quot;color: #bd93f9;&quot;&gt;SECRET&lt;/span&gt;);&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="1130" y="498.73" width="240" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-34" value="&lt;span style=&quot;color: rgb(240, 240, 240); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(42, 37, 47); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;b&gt;userController.js&lt;/b&gt;&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-                    <mxGeometry x="1210" y="578.73" width="120" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-35" value="É criado um token JWT, que é hasheado&lt;br&gt;com base em uma string secreta definida&lt;br&gt;nas variáveis de ambiente" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="1130" y="608.73" width="240" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-36" value="&lt;div style=&quot;color: rgb(248, 248, 242); background-color: rgb(40, 42, 54); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;{&lt;/div&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&quot;token&quot;: &quot;eyJhbB5KS89OZQQk2AD76MaPkF...&quot;&lt;/div&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;}&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-                    <mxGeometry x="1460" y="498.73" width="240" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="gmmMnPffJitp2xm2gEH7-39" target="gmmMnPffJitp2xm2gEH7-41" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="1590" y="850"/>
-                            <mxPoint x="250" y="850"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-39" value="Token" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="1560" y="578.73" width="60" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="gmmMnPffJitp2xm2gEH7-41" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="410" y="790" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-41" value="POST" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="180" y="750" width="140" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="gmmMnPffJitp2xm2gEH7-42" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="410" y="700" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-42" value="GET" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="180" y="660" width="140" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="gmmMnPffJitp2xm2gEH7-53" value="Este Token é usado no &lt;i&gt;Header&lt;/i&gt; das requisições&lt;br&gt;para poder acessar qualquer outra rota na &lt;i&gt;API&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="130" y="863" width="270" height="40" as="geometry"/>
-                </mxCell>
-            </root>
-        </mxGraphModel>
-    </diagram>
+<mxfile host="Electron" modified="2023-10-15T20:57:32.573Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.2 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" version="22.0.2" etag="y8Dr25-IuvklxIh835yV" type="device">
+  <diagram name="Page-1" id="P8LCigwueWlHuuaHy9ja">
+    <mxGraphModel dx="1996" dy="742" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gmmMnPffJitp2xm2gEH7-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="gmmMnPffJitp2xm2gEH7-2" target="gmmMnPffJitp2xm2gEH7-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;{&lt;br&gt;&amp;nbsp; username: &quot;user&quot;,&lt;br&gt;password: &quot;123&quot;&lt;br&gt;}&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="180" y="161.73" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-3" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Sign Up&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fillColor=none;strokeColor=default;" parent="1" vertex="1">
+          <mxGeometry y="170" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="gmmMnPffJitp2xm2gEH7-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="819" y="202" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-6" value="&lt;div style=&quot;color: rgb(248, 248, 242); background-color: rgb(40, 42, 54); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;bcrypt.hash(&lt;span style=&quot;color: rgb(255, 184, 108); font-style: italic;&quot;&gt;req&lt;/span&gt;.body.password, &lt;span style=&quot;color: rgb(189, 147, 249);&quot;&gt;10&lt;/span&gt;)&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="478" y="159.37" width="263" height="84.73" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-7" value="" style="endArrow=none;html=1;rounded=0;dashed=1;dashPattern=8 8;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="323" as="sourcePoint" />
+            <mxPoint x="410" y="63" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-8" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;API&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="750" y="81.31" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-11" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;/user/signup&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="315" y="170" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-12" value="&lt;span style=&quot;color: rgb(240, 240, 240); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(42, 37, 47); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;b&gt;userController.js&lt;/b&gt;&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="580" y="241.73" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-13" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Senha é hasheada com uma criptografia&lt;br&gt;irreversível usando a biblioteca&amp;nbsp;&lt;br&gt;&lt;i&gt;bycryptjs&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="485" y="262" width="270" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-14" value="&lt;div style=&quot;color: rgb(248, 248, 242); background-color: rgb(40, 42, 54); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;await &lt;span style=&quot;color: #8be9fd;&quot;&gt;User&lt;/span&gt;.&lt;span style=&quot;color: #50fa7b;&quot;&gt;create&lt;/span&gt;(&lt;span style=&quot;color: #ffb86c;font-style: italic;&quot;&gt;req&lt;/span&gt;.body);&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="820" y="161.73" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-15" value="&lt;span style=&quot;color: rgb(240, 240, 240); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(42, 37, 47); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;b&gt;userController.js&lt;/b&gt;&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="900" y="241.73" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-16" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Usuário é criado no banco&lt;br&gt;de dados usando o seu Model, com&lt;br&gt;a senha já hasheada&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="835" y="262" width="240" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="gmmMnPffJitp2xm2gEH7-19" target="gmmMnPffJitp2xm2gEH7-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-19" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;{&lt;br&gt;&amp;nbsp; username: &quot;user&quot;,&lt;br&gt;password: &quot;123&quot;&lt;br&gt;}&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="177" y="442.42" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-20" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Login&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fillColor=none;strokeColor=default;" parent="1" vertex="1">
+          <mxGeometry x="-3" y="583.69" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-21" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png;" parent="1" vertex="1">
+          <mxGeometry x="156" y="372" width="34.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="gmmMnPffJitp2xm2gEH7-23" target="gmmMnPffJitp2xm2gEH7-30" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="807" y="482" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-23" value="&lt;div style=&quot;color: rgb(248, 248, 242); background-color: rgb(40, 42, 54); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;User.&lt;span style=&quot;color: #50fa7b;&quot;&gt;findOne&lt;/span&gt;({ username&lt;span style=&quot;color: #ff79c6;&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;color: #ffb86c;font-style: italic;&quot;&gt;req&lt;/span&gt;.body.username });&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="497" y="442.42" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-24" value="" style="endArrow=none;html=1;rounded=0;dashed=1;dashPattern=8 8;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="979" as="sourcePoint" />
+            <mxPoint x="410" y="349" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-25" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;API&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="992" y="367" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-26" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Front-End&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="182" y="368.69" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-27" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;/user/login&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="319" y="450.69" width="87" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-29" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Uma busca no banco é feita pelo &lt;br&gt;nome do usuário&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="485" y="546.69" width="281" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="gmmMnPffJitp2xm2gEH7-30" edge="1" target="gmmMnPffJitp2xm2gEH7-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1117" y="482.4199999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-30" value="&lt;div style=&quot;color: rgb(248, 248, 242); background-color: rgb(40, 42, 54); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;bcrypt.compare(&lt;span style=&quot;color: #ffb86c;font-style: italic;&quot;&gt;req&lt;/span&gt;.body.password, &lt;span style=&quot;color: #bd93f9;&quot;&gt;user&lt;/span&gt;.password);&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="817" y="442.42" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-32" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;É feita uma comparação entre &lt;br&gt;a senha do usuário&lt;br&gt;do banco de dados e a&amp;nbsp;&lt;br&gt;da requisição&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="817" y="547" width="259" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="gmmMnPffJitp2xm2gEH7-33" target="gmmMnPffJitp2xm2gEH7-36" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-33" value="&lt;div style=&quot;color: rgb(248, 248, 242); background-color: rgb(40, 42, 54); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;jwt.sign({ username&lt;span style=&quot;color: #ff79c6;&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;color: #bd93f9;&quot;&gt;user&lt;/span&gt;.username }, &lt;span style=&quot;color: #bd93f9;&quot;&gt;SECRET&lt;/span&gt;);&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1127" y="442.42" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-35" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;É criado um token JWT, que é hasheado&lt;br&gt;com base em uma string secreta definida&lt;br&gt;nas variáveis de ambiente&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1081" y="546.69" width="347" height="77" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-36" value="&lt;div style=&quot;color: rgb(248, 248, 242); background-color: rgb(40, 42, 54); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;{&lt;/div&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&quot;token&quot;: &quot;eyJhbB5KS89OZQQk2AD76MaPkF...&quot;&lt;/div&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;}&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1457" y="442.42" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1585" y="793" />
+              <mxPoint x="248" y="793" />
+            </Array>
+            <mxPoint x="1585" y="551.4200000000001" as="sourcePoint" />
+            <mxPoint x="248" y="734.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-39" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;🔑 Token&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1543" y="520.4200000000001" width="89" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="gmmMnPffJitp2xm2gEH7-41" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="695" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-41" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;POST&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="180" y="655" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="gmmMnPffJitp2xm2gEH7-42" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="605" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-42" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;GET&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="180" y="565" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gmmMnPffJitp2xm2gEH7-53" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Este Token é usado no &lt;i style=&quot;&quot;&gt;Header&lt;/i&gt; das requisições&lt;br&gt;para poder acessar qualquer outra rota na &lt;i style=&quot;&quot;&gt;API&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="732" y="735" width="395" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="bGhmSErIRBEKyOTZzh4E-5" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png;" vertex="1" parent="1">
+          <mxGeometry x="159" y="95.04000000000002" width="34.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bGhmSErIRBEKyOTZzh4E-6" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Front-End&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="185" y="91.73000000000002" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="bGhmSErIRBEKyOTZzh4E-9" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;i&gt;userController.js&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="549" y="518.42" width="148" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="bGhmSErIRBEKyOTZzh4E-10" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;i&gt;userController.js&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="866" y="517.42" width="148" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="bGhmSErIRBEKyOTZzh4E-11" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;i&gt;userController.js&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1173" y="518.42" width="148" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="bGhmSErIRBEKyOTZzh4E-12" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;🔑 Token&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="317" y="568.19" width="89" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="bGhmSErIRBEKyOTZzh4E-13" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;🔑 Token&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="317" y="661" width="89" height="34" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
 </mxfile>
