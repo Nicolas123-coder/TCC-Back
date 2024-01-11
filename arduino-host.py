@@ -2,7 +2,7 @@ import serial
 import time
 import requests
 
-serial_port = '/dev/cu.usbmodem1201'  # Arduino's serial port
+serial_port = '/dev/cu.usbmodem1101'  # Arduino's serial port
 baud_rate = 115200  # Arduino's baud rate
 URL = 'http://localhost:3002/baixaRemedio'
 JWT_TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyMyIsImlhdCI6MTY5NjU1MTcyNn0.PBfQYeZB8_1ZCcBJpApx2lppkJ8CCtDboT1Sb2kF3xc'
@@ -44,7 +44,7 @@ while True:
               }
 
               requests.post(URL, json=payload, headers=headers)
-    except KeyboardInterrupt as e:
+    except Exception as e:
       print(e)
       break
         
